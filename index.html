@@ -1,9 +1,28 @@
 <!DOCTYPE html>
 <html>
     <head>
-
+        <meta charset="utf-8">
+        <meta name = "viewport" content="width=device-width">
+        <meta http-equiv="refresh" content="4; URL='http://127.0.0.1:5500/homepage.html'"/>
+        <title>Loading Please Wait...</title>
     </head>
+    <style>
+        .animation-center{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            margin-top:150px;
+        }
+    </style>
     <body>
-        
+        <div class = "animation-center">
+            <div style="display: block;">
+                <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_8y9IYf.json"  
+            background="transparent"  speed="1"  style="width: 300px; height: 300px;" autoplay></lottie-player>
+            </div>
+        </div>
     </body>
+    <!-- scripts for lottieplayer and jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </html>
