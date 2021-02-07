@@ -1,6 +1,6 @@
 /*https://www.youtube.com/watch?v=XL68br6JyYs&t=257s&ab_channel=FlorinPop 15:06 */
 const PokeDex_Container = document.getElementById('PokeDex_Container');
-const pokemon_number= 150;
+const pokemon_number= 151;
 const colors = {
     fire: '#FDDFDF',
 	grass: '#DEFDE0',
@@ -21,7 +21,7 @@ const colors = {
 const main_types = Object.keys(colors);
 console.log(main_types);
 const fetchPokemonsList = async() => {
-    for(let c = 1; c < pokemon_number; c++){
+    for (let c = 2; c <= pokemon_number; c++){
         await getPokemon(c);
     }
 }
