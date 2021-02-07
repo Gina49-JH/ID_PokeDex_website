@@ -7,12 +7,67 @@
   }
   
   body{
-   
     margin: 0;
   }
 
   * {
     box-sizing: border-box;
+  }
+
+  .title{
+    text-align: left;
+    margin-top:10px;
+    margin-left: 12%;
+    max-width:76%;
+    left:20px;
+    color: grey;
+    background-color: white;
+    font-family: 'Play', sans-serif;
+  }
+
+  .labelsearch{
+    text-align: left;
+    margin-top:20px;
+    margin-left: 12%;
+    max-width:76%;
+    left:20px;
+    height: 150px;
+    font-size: 24px;
+    color:white;
+    background-color: darkgray;
+  }
+
+  .labelsearch input{
+    margin-left: 10px;
+    max-width: 30%;
+  }
+
+  .labelsearch h2{
+    margin-left: 10px;
+    display:inline-block;
+  }
+
+  .labelsearch button{
+    margin-top: -36px;
+    margin-left: 36%;
+    margin-bottom: 50px;
+  }
+
+  .explaininfo{
+    text-align: left;
+    margin-top:-140px;
+    margin-bottom: 80px;
+    margin-left: 49%;
+    max-width:38%;
+    font-size: 24px;
+    color:white;
+    background-color: lightpink;
+  }
+
+  .explaininfo h2{
+    text-align: justify;
+    font-size: 32px;
+    font-family: 'Roboto Mono', monospace;
   }
 
   .PokeDex_Container{
