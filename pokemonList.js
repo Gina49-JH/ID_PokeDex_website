@@ -21,7 +21,7 @@ const colors = {
 const main_types = Object.keys(colors);
 console.log(main_types);
 const fetchPokemonsList = async() => {
-    for (let c = 2; c <= pokemon_number; c++){
+    for (let c = 1; c <= pokemon_number; c++){
         await getPokemon(c);
     }
 }
@@ -45,7 +45,7 @@ function createPokemonCard(pokemon){
 
     const pokeInnerHTMl = `
     <div class = "img-containerlist">
-        <img src = "https://pokeres.bastionbot.org/images/pokemon/${pokemon.id}.png"/>
+        <a href="index.html"><img src = "https://pokeres.bastionbot.org/images/pokemon/${pokemon.id}.png"/></a>
     </div>
     <div class ="pokemon_info">
         <span class ="pokenumber">${pokemon.id}</span>
@@ -58,4 +58,19 @@ function createPokemonCard(pokemon){
     PokeDex_Container.appendChild(Pokemon_Card)
 }
 
-getPokemon(1);
+getPokemon(0);
+
+$('.ui.search')
+  .search({
+    apiSettings: {
+      url: 'https://pokeres.bastionbot.org/images/pokemon/$id.png"/'
+    },
+    fields: {
+      results : 'items',
+      title   : 'name',
+      url     : 'html_url'
+    },
+    minCharacters : 3
+  })
+;
+
