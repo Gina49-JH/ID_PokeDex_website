@@ -1,6 +1,6 @@
 /*https://www.youtube.com/watch?v=XL68br6JyYs&t=257s&ab_channel=FlorinPop 15:06 */
 const PokeDex_Container = document.getElementById('PokeDex_Container');
-const pokemon_number= 151;
+const pokemon_number= 898;
 const colors = {
     fire: '#FDDFDF',
 	grass: '#DEFDE0',
