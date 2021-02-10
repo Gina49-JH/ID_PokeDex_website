@@ -1,3 +1,5 @@
+/* Building pokeDex valina method part 1: https://www.youtube.com/watch?v=T-VQUKeSU1w&ab_channel=JamesQQuick
+                                  part 2: https://www.youtube.com/watch?v=L0pPRauLP2E&t=1126s&ab_channel=JamesQQuick */
 const pokedex = document.getElementById("pokedex");
 const pokeStore = {}
 
@@ -67,5 +69,7 @@ const closePopup = () => {
     const popup = document.querySelector('.popup');
     popup.parentElement.removeChild(popup);
 }
+
+
 
 fetchPokemonData();
