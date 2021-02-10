@@ -14,22 +14,6 @@ const fetchPokemonData = async() => {
     }));
     console.log(data.results);
     displayPokemonData(pokemondata);
-    // part 1:
-    /*const promises = [];
-    for(let c = 1; c <= 150; c++) {
-        const url = `https://pokeapi.co/api/v2/pokemon/${c}`;
-        promises.push(fetch(url).then((res) => res.json()));
-    }
-
-    Promise.all(promises).then(results => {
-        const pokemon = results.map((data) => ({
-            name: data.name,
-            id: data.id,
-            image: data.sprites['front_default'],
-            type: data.types.map((type) => type.type.name).join(', ') 
-        }));
-        displayPokemonData(pokemon);
-    });*/
 };
 
 const displayPokemonData = (pokemon) => {
@@ -56,7 +40,6 @@ const selectPokemon = async(id) => {
     const pokeman  =  await res.json();
     pokeStore[id] = pokeman;
     console.log(pokeStore);
-    displayPopup(pokeman);
    }
     displayPopup(pokeStore[id]);
 };
