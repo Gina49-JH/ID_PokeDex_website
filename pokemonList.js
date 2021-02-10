@@ -1,6 +1,6 @@
 /*https://www.youtube.com/watch?v=XL68br6JyYs&t=257s&ab_channel=FlorinPop 15:06 */
 const PokeDex_Container = document.getElementById('PokeDex_Container');
-const pokemon_number= 898;
+const pokemon_number= 12;
 const colors = {
     fire: '#FDDFDF',
 	grass: '#DEFDE0',
@@ -45,7 +45,7 @@ function createPokemonCard(pokemon){
 
     const pokeInnerHTMl = `
     <div class = "img-containerlist">
-        <a href="index.html"><img src = "https://pokeres.bastionbot.org/images/pokemon/${pokemon.id}.png"/></a>
+        <a href="homepage.html"><img src = "https://pokeres.bastionbot.org/images/pokemon/${pokemon.id}.png"/></a>
     </div>
     <div class ="pokemon_info">
         <span class ="pokenumber">${pokemon.id}</span>
