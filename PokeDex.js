@@ -1,34 +1,40 @@
 /* Building pokeDex valina method part 1: https://www.youtube.com/watch?v=T-VQUKeSU1w&ab_channel=JamesQQuick
                                   part 2: https://www.youtube.com/watch?v=L0pPRauLP2E&t=1126s&ab_channel=JamesQQuick */
 const pokedex = document.getElementById("pokedex");
+const searchBar = document.getElementById('searchBar');
 const pokeStore = {}
 
 const fetchPokemonData = async() => {
-    const url = `https://pokeapi.co/api/v2/pokemon`;
-    const res = fetch(url);
-    const data = await (await res).json();
-    const pokemondata = data.results.map((result, index) =>
-    ({
-        ...result,
-        name : result.name,
-        id : index + 1,
-        image: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${index + 1}.png`,
-    }));
+    try{
+        const url = `https://pokeapi.co/api/v2/pokemon`;
+        const res = fetch(url);
+        const data = await (await res).json();
+        const pokemondata = data.results.map((result, index) =>
+        ({
+            ...result,
+            name : result.name,
+            id : index + 1,
+            image: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${index + 1}.png`,
+        }));
     console.log(data.results);
     displayPokemonData(pokemondata);
+    }
+    catch(err){
+        console.log(err);
+    }
 };
 
 const displayPokemonData = (pokemon) => {
     console.log(pokemon);
     const pokemonHTMLString = pokemon
-        .map(pokeman =>
-        `
+        .map((pokeman) => {
+        return`
         <li class ="card" onclick="selectPokemon(${pokeman.id})">
         <img class = "card-image" src="${pokeman.image}" />
         <h2 class ="card-title">${pokeman.id}.${pokeman.name}</h2>
         </li>
         `
-        )
+        })
 
     .join('');
     pokedex.innerHTML = pokemonHTMLString;
