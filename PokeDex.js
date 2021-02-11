@@ -1,15 +1,30 @@
-/* Building pokeDex valina method part 1: https://www.youtube.com/watch?v=T-VQUKeSU1w&ab_channel=JamesQQuick
-                                  part 2: https://www.youtube.com/watch?v=L0pPRauLP2E&t=1126s&ab_channel=JamesQQuick */
+// get the id from the html.
 const pokedex = document.getElementById("pokedex");
 const searchBar = document.getElementById('searchBar');
-const pokeStore = {}
+// create an empty {} to store and display pokemon
+const pokeStore = {};
+// create an empty list to store data for search
+let pokemondata = [];
 
+searchBar.addEventListener('keyup', (e) => {
+    const searchString = e.target.value.toLowerCase();
+    console.log(searchString);
+    // if searchStr is H -> h
+    // if searchStr is h -> H
+    const filterList = pokemondata.filter((pokeman) => {
+         // convert name to lowercase and then compare
+        return pokeman.name.toLowerCase().includes(searchString) 
+    });
+    // display the filterList data to homepage
+    displayPokemonData(filterList);
+});
+// calling an method for PokeDex API convert Data to JSON.
 const fetchPokemonData = async() => {
     try{
         const url = `https://pokeapi.co/api/v2/pokemon`;
         const res = fetch(url);
         const data = await (await res).json();
-        const pokemondata = data.results.map((result, index) =>
+        pokemondata = data.results.map((result, index) =>
         ({
             ...result,
             name : result.name,
@@ -21,7 +36,7 @@ const fetchPokemonData = async() => {
     }
     catch(err){
         console.log(err);
-    }
+    };
 };
 
 const displayPokemonData = (pokemon) => {
@@ -77,5 +92,5 @@ const closePopup = () => {
 }
 
 
-
+// call an method to display fetchPokemonData
 fetchPokemonData();
