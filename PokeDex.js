@@ -4,6 +4,7 @@ const searchBar = document.getElementById('searchBar');
 // create an empty {} to store and display pokemon
 const pokeStore = {};
 // create an empty list to store data for search
+// reference: https://www.youtube.com/watch?v=wxz5vJ1BWrc
 let pokemondata = [];
 
 searchBar.addEventListener('keyup', (e) => {
@@ -21,7 +22,7 @@ searchBar.addEventListener('keyup', (e) => {
 // calling an method for PokeDex API convert Data to JSON.
 const fetchPokemonData = async() => {
     try{
-        const url = `https://pokeapi.co/api/v2/pokemon`;
+        const url = `https://pokeapi.co/api/v2/pokemon?limit=151`;
         const res = fetch(url);
         const data = await (await res).json();
         pokemondata = data.results.map((result, index) =>

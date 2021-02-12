@@ -2,44 +2,60 @@
 <html>
     <head>
         <html lang ="en">
-        <meta charset = "UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- external reference bootstrap v3.4.1 for css -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <!-- external stylesheet to store css into a file-->
         <link rel="stylesheet" href="testing.css">
     </head>
     <body>
-        <nav class="navbar navbar-inverse">
-            <div class="container-fluid">
-              <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>                        
-                </button>
-                <a class="navbar-brand" href="index.html">PokeDex</a>
-              </div>
-              <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav">
-                  <li><a href="homepage.html">Home</a></li>
-                  <li><a href="contactpage.html">Contact Us</a></li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-        <div class="container">
-            <h1> PokeDex this is an easter egg congrats on finding it</h1>
-            <input type="text" name="searchBar" id="searchBar" placeholder="search for a charater" />
-            <ol id ="pokedex"></ol>
+    <!-- display the navagation bar using bootstrap template with modifed code-->
+      <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+          </button>
+          <a class="navbar-brand" href="index.html">PokeDex</a>
         </div>
-        <div class="footer">
-          <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_ObshHL.json"  background="transparent"  speed="1"  style="width: 200px; height: 200px;" autoplay></lottie-player>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+          <li><a href="homepage.html">Home</a></li>
+          <li><a href="contactpage.html">Contact Us</a></li>
+          </ul>
         </div>
-    </body>
-    <!-- Bootstrap version 5.0 Bundle with Popper -->
-    <script src ="PokeDex.js"></script>
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
-     <!-- Include all compiled plugins (below), or include individual files as needed -->
-     <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+      </div>
+    </nav>
+    <!-- display the contents of the pokeDex data and animation from LottieFiles-->
+    <div class="container">
+      <h1>PokeDex</h1>  
+      <!-- comment out for testing
+        <h1> PokeDex this is an easter egg congrats on finding it</h1> 
+      -->
+      <label for ="searchtext" id="searchtext">Name of the pokemon:</label>
+      <br>
+      <input type="text" name="searchBar" id="searchBar" placeholder="Enter Pokemon Name" />
+      <div class ="explaininfo">
+        <h1>You can type the pokemon name inside the textbox</h1>
+      </div>
+      <ol id ="pokedex"></ol>
+    </div>
+    <div class="footer">
+      <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_ObshHL.json"  background="transparent"  speed="1"  style="width: 200px; height: 200px;" autoplay></lottie-player>
+    </div>
+  </body>
+  <!-- external reference file to run PokeDex.js-->
+  <script src ="PokeDex.js"></script>
+  <!-- external reference file to run Lottie Files animation-->
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <!-- Bootstrap version 3.4.1 with external script -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
 </html>
