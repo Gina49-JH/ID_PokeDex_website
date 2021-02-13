@@ -71,6 +71,7 @@ const selectPokemon = async(id) => {
 
 const displayPopup = (pokeman) => {
     const type = pokeman.types.map((type) => type.type.name).join(', ');
+    const ability = pokeman.abilities.map((ability) => ability.ability.name).join(', ');
     const image = pokeman.sprites['front_default'];
     const htmlstring = `
     <div class ="popup">
@@ -81,6 +82,7 @@ const displayPopup = (pokeman) => {
             <p><small>Height: </small><br>${pokeman.height}
             <br><small>Weight: </small><br>${pokeman.weight}
             <br><small>Type: </small><br>${type}
+            <br><small>Ability: </small><br>${ability}
         </div>
     </div>
     `
