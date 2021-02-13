@@ -9,12 +9,13 @@ let pokemondata = [];
 
 searchBar.addEventListener('keyup', (e) => {
     const searchString = e.target.value.toLowerCase();
+    // display the output of the user input in console for debugging.
     console.log(searchString);
     // if searchStr is H -> h
     // if searchStr is h -> H
     const filterList = pokemondata.filter((pokeman) => {
          // convert name to lowercase and then compare
-        return pokeman.name.toLowerCase().includes(searchString) 
+        return pokeman.name.toLowerCase().includes(searchString)
     });
     // display the filterList data to homepage
     displayPokemonData(filterList);

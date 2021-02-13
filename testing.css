@@ -93,6 +93,7 @@ button:hover {
     margin: 0 auto;
     text-align: center;
     color: black;
+    
 }
 
 .container h1{
@@ -106,9 +107,10 @@ button:hover {
 .container label{
     text-align: left;
     font-size: 36px;
-    margin-left: -65%;
+    margin-left: -72.5%;
     max-width:100%;
-    color:greenyellow;
+    color:white;
+    background-color: black;
   
 }
 
@@ -125,8 +127,10 @@ button:hover {
     margin-left: 49%;
     max-width: 52%;
     margin-top: -9%;
-    font-size:34px;
+    font-size:32px;
     margin-bottom: 40px;
+    background-color: grey;
+    color:white;
 }
 
 .h1{
