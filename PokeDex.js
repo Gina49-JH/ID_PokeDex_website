@@ -78,9 +78,9 @@ const displayPopup = (pokeman) => {
         <div class="card">
             <img class = "card-image" src="${image}" />
             <h2 class ="card-title">${pokeman.id}.${pokeman.name}</h2>
-            <p><small>Height: </small>${pokeman.height} 
-            | <small>Weight: </small>${pokeman.weight}
-            | <small>Type: </small>${type}
+            <p><small>Height: </small><br>${pokeman.height}
+            <br><small>Weight: </small><br>${pokeman.weight}
+            <br><small>Type: </small><br>${type}
         </div>
     </div>
     `
