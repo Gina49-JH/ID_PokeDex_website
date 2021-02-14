@@ -10,6 +10,7 @@ let pokemondata = [];
 searchBar.addEventListener('keyup', (e) => {
     // gather user input for pokemon name in pokemondata list.
     const searchString = e.target.value.toLowerCase();
+    // gather user input for pokemon number in pokemondata list.
     const searchNumber = e.target.value.toString();
     // display the output of the user input in console for debugging.
     console.log(searchString);
