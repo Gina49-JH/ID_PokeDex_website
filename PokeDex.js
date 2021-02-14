@@ -8,14 +8,18 @@ const pokeStore = {};
 let pokemondata = [];
 
 searchBar.addEventListener('keyup', (e) => {
+    // gather user input for pokemon name in pokemondata list.
     const searchString = e.target.value.toLowerCase();
+    const searchNumber = e.target.value.toString();
     // display the output of the user input in console for debugging.
     console.log(searchString);
+    console.log(searchNumber);
     // if searchStr is H -> h
     // if searchStr is h -> H
     const filterList = pokemondata.filter((pokeman) => {
          // convert name to lowercase and then compare
         return pokeman.name.toLowerCase().includes(searchString)
+        || pokeman.id.toString().includes(searchNumber);
     });
     // display the filterList data to homepage
     displayPokemonData(filterList);
