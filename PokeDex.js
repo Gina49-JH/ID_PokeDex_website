@@ -1,6 +1,7 @@
 // get the id from the html.
 const pokedex = document.getElementById("pokedex");
 const searchBar = document.getElementById('searchBar');
+document.getElementById('searchBar').value = '';
 // create an empty {} to store and display pokemon
 const pokeStore = {};
 // create an empty list to store data for search
@@ -8,6 +9,7 @@ const pokeStore = {};
 let pokemondata = [];
 
 searchBar.addEventListener('keyup', (e) => {
+    $('#searchBar').val = '';
     // gather user input for pokemon name in pokemondata list.
     const searchString = e.target.value.toLowerCase();
     // gather user input for pokemon number in pokemondata list.
@@ -41,6 +43,7 @@ const fetchPokemonData = async() => {
     console.log(data.results);
     displayPokemonData(pokemondata);
     }
+    // display an error message if the data cannot be found.
     catch(err){
         console.log(err);
     };
