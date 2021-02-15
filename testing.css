@@ -54,11 +54,38 @@ body{
 .popup .card p{
     color:black;
     text-align: left;
+    margin-left: 40%;
+    width: 100%;
 }
 
 .popup .card small{
     color:grey;
     font-size: 15px;
+}
+
+.popup .card img{
+    margin-left:-130%;
+    margin-bottom: -10%
+}
+
+.popup .card .card-title{
+    margin-top: -80%;
+    margin-left: 40%;
+}
+
+.popup .card .stats-info{
+    color:wheat;
+    margin-left: -140%;
+}
+
+table,th{
+    font-family: arial, sans-serif;
+    border:1px solid black;
+    border-collapse: collapse;
+    margin-left: -70%;
+    width: 80%;
+    max-width: 100%;
+    text-align: center;
 }
 
 #closeBtn{
@@ -111,7 +138,6 @@ button:hover {
     margin: 0 auto;
     text-align: center;
     color: black;
-    
 }
 
 .container h1{
@@ -153,6 +179,7 @@ button:hover {
     color:white;
 }
 
+
 .h1{
     text-transform: uppercase;
     text-align: center;
@@ -190,7 +217,34 @@ button:hover {
     .popup .card p{
         color:black;
         text-align: left;
-        margin-left: -10px;
+        margin-left: auto;
+        margin-top: 5%;
+    }
+
+    .popup .card .card-title{
+        text-align: center;
+        margin-left: auto;
+        margin-top: 10%;
+    }
+
+    .popup .card .stats-info{
+        margin-left: auto;
+        text-align: center;
+    }
+
+    table,th{
+        margin-left: auto;
+        color:white;
+        border:1px solid black;
+        background-color: green;
+        text-align: center;
+        width: 80%;
+        max-width: 100%;
+    }
+    
+    .popup .card img{
+        margin-top: 10%;
+        margin-right: -140%;
     }
 
     .explaininfo h1 {

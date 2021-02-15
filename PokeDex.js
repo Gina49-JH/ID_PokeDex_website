@@ -96,9 +96,31 @@ const displayPopup = (pokeman) => {
             <p><small>Height: </small><br>${pokeman.height}
             <br><small>Weight: </small><br>${pokeman.weight}
             <br><small>Type: </small><br>${type}
-            <br><small>Ability: </small><br>${ability}
+            <br><small>Ability: </small><br>${ability}</p>
+            <table>
+            <h2 class="stats-info">Stats</h2>
+            <tr>
+                <th>${pokeman.stats[0].stat.name}: </th>
+                <th>${pokeman.stats[0].base_stat}</th>
+            </tr>
+            <tr>
+                <th>${pokeman.stats[1].stat.name}: </th>
+                <th>${pokeman.stats[1].base_stat}</th>
+            </tr>
+            <tr>
+                <th>${pokeman.stats[2].stat.name}: </th>
+                <th>${pokeman.stats[2].base_stat}</th>
+            </tr>
+            <tr>
+                <th>${pokeman.stats[3].stat.name}: </th>
+                <th>${pokeman.stats[3].base_stat}</th>
+            </tr>
+            <tr>
+                <th>${pokeman.stats[4].stat.name}: </th>
+                <th>${pokeman.stats[4].base_stat}</th>
+            </tr>
+            </table>
         </div>
-        
     </div>
     `
     pokedex.innerHTML = htmlstring + pokedex.innerHTML;
@@ -108,8 +130,6 @@ const displayPopup = (pokeman) => {
 const closePopup = () => {
     const popup = document.querySelector('.popup');
     popup.parentElement.removeChild(popup);
-}
-
-
+} 
 // call an method to display fetchPokemonData
 fetchPokemonData();
