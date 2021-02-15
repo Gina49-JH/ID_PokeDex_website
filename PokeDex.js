@@ -1,5 +1,6 @@
-// get the id from the html.
+// create a variable to get the id from the html.
 const pokedex = document.getElementById("pokedex");
+// create a variable to get the id from the html
 const searchBar = document.getElementById('searchBar');
 document.getElementById('searchBar').value = '';
 // create an empty {} to store and display pokemon
@@ -15,7 +16,7 @@ searchBar.addEventListener('keyup', (e) => {
     const searchString = e.target.value.toLowerCase();
     // gather user input for pokemon number in pokemondata list.
     const searchNumber = e.target.value.toString();
-    // display the output of the user input in console for debugging.
+    // display the output of the user input in console for debugging in console.
     // name of the pokemon
     console.log(searchString);
     // number of the pokemon index
@@ -27,7 +28,7 @@ searchBar.addEventListener('keyup', (e) => {
          // convert numbers inside pokemondata and then compare
          || pokeman.id.toString().includes(searchNumber);
     });
-    // display the filterList data to homepage
+    // display the filterList data to method called displayPokemonData
     displayPokemonData(filterList);
 });
 // calling an method for PokeDex API convert Data to JSON.
@@ -43,7 +44,9 @@ const fetchPokemonData = async() => {
             id : index + 1,
             image: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${index + 1}.png`,
         }));
+    // display the output of the pokemondata for debugging in console
     console.log(data.results);
+    // call a method displayPokemonData to display pokemonData.
     displayPokemonData(pokemondata);
     }
     // display an error message if the data cannot be found.
@@ -95,6 +98,7 @@ const displayPopup = (pokeman) => {
             <br><small>Type: </small><br>${type}
             <br><small>Ability: </small><br>${ability}
         </div>
+        
     </div>
     `
     pokedex.innerHTML = htmlstring + pokedex.innerHTML;
