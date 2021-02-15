@@ -8,6 +8,7 @@ const pokeStore = {};
 // reference: https://www.youtube.com/watch?v=wxz5vJ1BWrc
 let pokemondata = [];
 
+// addEventListener to track user input
 searchBar.addEventListener('keyup', (e) => {
     $('#searchBar').val = '';
     // gather user input for pokemon name in pokemondata list.
@@ -15,14 +16,16 @@ searchBar.addEventListener('keyup', (e) => {
     // gather user input for pokemon number in pokemondata list.
     const searchNumber = e.target.value.toString();
     // display the output of the user input in console for debugging.
+    // name of the pokemon
     console.log(searchString);
+    // number of the pokemon index
     console.log(searchNumber);
-    // if searchStr is H -> h
-    // if searchStr is h -> H
+    // variable to filiter specific types of data inside pokemondata
     const filterList = pokemondata.filter((pokeman) => {
-         // convert name to lowercase and then compare
-        return pokeman.name.toLowerCase().includes(searchString)
-        || pokeman.id.toString().includes(searchNumber);
+         // convert name inside pokemondata to lowercase and then compare
+         return pokeman.name.toLowerCase().includes(searchString)
+         // convert numbers inside pokemondata and then compare
+         || pokeman.id.toString().includes(searchNumber);
     });
     // display the filterList data to homepage
     displayPokemonData(filterList);
