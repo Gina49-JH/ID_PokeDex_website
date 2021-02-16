@@ -23,9 +23,9 @@ searchBar.addEventListener('keyup', (e) => {
     console.log(searchNumber);
     // variable to filiter specific types of data inside pokemondata
     const filterList = pokemondata.filter((pokeman) => {
-         // convert name inside pokemondata to lowercase and then compare
+         // convert name inside pokemondata to lowercase and then compare if data is found inside.
          return pokeman.name.toLowerCase().includes(searchString)
-         // convert numbers inside pokemondata and then compare
+         // convert numbers inside pokemondata and then compare if data is found inside.
          || pokeman.id.toString().includes(searchNumber);
     });
     // display the filterList data to method called displayPokemonData
@@ -34,9 +34,18 @@ searchBar.addEventListener('keyup', (e) => {
 // calling an method for PokeDex API convert Data to JSON.
 const fetchPokemonData = async() => {
     try{
-        const url = `https://pokeapi.co/api/v2/pokemon?limit=151`;
+        // create a variable(url) to store api url link
+        const url = `https://pokeapi.co/api/v2/pokemon?limit=898`;
+        //hide the loader when everything is finished loading
+        window.addEventListener("load", function () {
+            const loader = document.querySelector(".loader");
+            loader.className += " hidden"; // class "loader hidden"
+        });
+        // create a variable(res) to fetch the data from the variable url.
         const res = fetch(url);
+        // fetch the res from the url and convert to JSON Format.
         const data = await (await res).json();
+        // using variable(pokemondata) to map data and store into an array.
         pokemondata = data.results.map((result, index) =>
         ({
             ...result,
@@ -54,15 +63,17 @@ const fetchPokemonData = async() => {
         console.log(err);
     };
 };
-
+//
 const displayPokemonData = (pokemon) => {
+    //  display the output of the pokemon in displayPokemonData method for debugging in console
     console.log(pokemon);
+    //
     const pokemonHTMLString = pokemon
         .map((pokeman) => {
         return`
         <li class ="card" onclick="selectPokemon(${pokeman.id})">
         <img class = "card-image" src="${pokeman.image}" />
-        <h2 class ="card-title">${pokeman.id}.${pokeman.name}</h2>
+        <h2 class ="card-title">#${pokeman.id}<br>${pokeman.name}</h2>
         </li>
         `
         })
@@ -70,7 +81,7 @@ const displayPokemonData = (pokemon) => {
     .join('');
     pokedex.innerHTML = pokemonHTMLString;
 }
-
+//
 const selectPokemon = async(id) => {
    if(!pokeStore[id])
    {
@@ -83,20 +94,29 @@ const selectPokemon = async(id) => {
     displayPopup(pokeStore[id]);
 };
 
+
+
+// create a variable to retrieve the pokemon data and display in html.
 const displayPopup = (pokeman) => {
+    // 
     const type = pokeman.types.map((type) => type.type.name).join(', ');
+    //
     const ability = pokeman.abilities.map((ability) => ability.ability.name).join(', ');
+    //
     const image = pokeman.sprites['front_default'];
+    //
+    //const test = pokeman.species['url'];
     const htmlstring = `
     <div class ="popup">
         <button id="closeBtn" onclick="closePopup()"> Close </button>
         <div class="card">
             <img class = "card-image" src="${image}" />
-            <h2 class ="card-title">${pokeman.id}.${pokeman.name}</h2>
+            <h2 class ="card-title">#${pokeman.id} ${pokeman.name}</h2>
             <p><small>Height: </small><br>${pokeman.height}
             <br><small>Weight: </small><br>${pokeman.weight}
             <br><small>Type: </small><br>${type}
             <br><small>Ability: </small><br>${ability}</p>
+            <!-- display the pokeman statt and name in a table -->
             <table>
             <h2 class="stats-info">Stats</h2>
             <tr>
@@ -124,6 +144,7 @@ const displayPopup = (pokeman) => {
     </div>
     `
     pokedex.innerHTML = htmlstring + pokedex.innerHTML;
+    // display the output of the pokemandata in popup method for debugging in console
     console.log(htmlstring);
 };
 
