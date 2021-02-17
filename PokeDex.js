@@ -6,9 +6,7 @@ document.getElementById('searchBar').value = '';
 // create an empty object to store and display pokemon
 const pokeStore = {};
 // create an empty list to store data for search
-// reference: https://www.youtube.com/watch?v=wxz5vJ1BWrc
 let pokemondata = [];
-
 // addEventListener to track user input
 searchBar.addEventListener('keyup', (e) => {
     $('#searchBar').val = '';
