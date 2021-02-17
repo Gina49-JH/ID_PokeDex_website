@@ -1,4 +1,4 @@
-Your Project's Name
+PokeDex
 
 One or two paragraphs providing an overview of your project. Tell us about your project.
 
@@ -65,3 +65,5 @@ Acknowledgements
     https://www.youtube.com/watch?v=L0pPRauLP2E&t=s&ab_channel=JamesQQuick
 
     https://www.youtube.com/watch?v=T-VQUKeSU1w&ab_channel=JamesQQuick
+
+    https://www.youtube.com/watch?v=wxz5vJ1BWrc
