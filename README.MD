@@ -1,15 +1,11 @@
 PokeDex
 
-One or two paragraphs providing an overview of your project. Tell us about your project.
+Building a Pokedex for users to search for the specific pokemon name or number which contains information of data to allow
+users to search and find more about specific pokemon. 
 
-Essentially, this part is your sales pitch.
 Design Process
 
 Provide us insights about your design process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
-
-In particular, as part of this section we recommend that you provide a list of User Stories, with the following general structure:
-
-    As a user type, I want to perform an action, so that I can achieve a goal.
 
 This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. These files should themselves either be included as a pdf file in the project itself (in an separate directory) Include the Adobe XD wireframe as a folder. You can include the XD share url.
 Features
@@ -17,36 +13,65 @@ Features
 In this section, you should go over the different parts of your project, and describe each in a sentence or so.
 Existing Features
 
-    Feature 1 - allows users X to achieve Y, by having them fill out Z
-    ...
+    Feature 1 - allows users to type a text or an number to search for the pokemon index.
+    Feature 2 - allows users to click on a specific pokemon and display an popup contain the data.
+    Feature 3 - allows users to see an loading bar animation before redirect to a new page.
+    Feature 4 - allows users to see the loading animation while scrolling down the page to find a specific pokemon and hide when completed.
+    Feature 5 - allows users to enter the input of the contact details and send the data to restdb database.
+    Feature 6 - allows users to clear the user input when reloading the page.
 
 In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
 Features Left to Implement
 
-    Another feature idea
+    First feature idea  - allows users to click on a random number which will generate a random number of pokemon in an array.
+    Second feature idea - allows users to see the charts of the pokemon stat when click on the card.
+    Third feature idea  - allows users to see the description of the pokemon when click on the card.
 
 Technologies Used
-
-In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
-
     JQuery
         The project uses JQuery to simplify DOM manipulation.
+    Bootstrap 
+        The project uses Bootstrap to simplify default template for html.
+    PokeAPI
+        The project uses PokeAPI to retrieve the data and simplify DOM mainpulation
 
 Testing
-
-For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
-
     Contact form:
         Go to the "Contact Us" page
         Try to submit the empty form and verify that an error message about the required fields appears
         Try to submit the form with an invalid email address and verify that a relevant error message appears
         Try to submit the form with all inputs valid and verify that a success message appears.
+    
+    Homepage:
+        Go to the "Homepage" page
+        Try to type a random number or pokemon name on the textbox and verify that specifc data appears below the textbox.
+        Try to reload the page which cause the text that was pervious typed will be deleted and will display prompt message.
+        Try to click on any random pokemon name in the card which will display an popup with the pokemon data in the same window.
+        Try to click close which close the popup contain pokemon data and only display array of pokemon name and number.
 
 In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
+the project looks and how it works was when users use eg computer...etc to access the page, the css will check for the screen sizes 
+of the devices used to access the page. If the device eg computer screen of height 1366px and width 768px, css will check the width if width is more than 740px, then it will only use the code from 1 to 216 in mainstyle.css to display the website layout for web version. If the device eg mobile screen of height 360px and width 740px, css will check the width if width is less than 740px, then it will only use the media query code from line 218 to line 305 in a mainstyle.css to display the website layout meant for mobile version. How it looks for the mobile version that width is scaled to max of 740px.
+First  - navbar has be reduced to text with background color of black box contains 3 white bar inside a button
+Second - box contains title with text color of grey and background color of white below the navbar
+Third  - box contains Name or number with text color of white, textbox contain message and background colour of blue below title
+fourth - box contains text of how to use the site text colour of white and background colour of grey below Name or number
+fifth  - card contain the pokemon number , name and picture of each pokemon and background colour of white.
 
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
+for the web version:
+First  - navbar which contain the title, home and contactpage button background colour of black and text colour is white.
+Second - box contains title with text color of grey and background color of white below the navbar
+Third  - box contains Name or number, textbox contain message, text of how to use the site, background colour and text is white below title.
+fourth - card contain the pokemon number , name and picture of each pokemon and background colour of white which each row contain 3 cards.
 
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
+bugs or known issues that was not addressed:
+There is a first bug where users type the correct values and press submit button, the page is freeze and did not display an alert for
+sent successfully to the speific email a.k.a restdb database however when we check on the database we found a new records of the 
+user input on the contactpage this issue have not addresssed yet.
+
+There is a second bug where users refreshed the page on the contactpage, when run on google chrome it was able to clear user input on 
+textbox successfully. While using firefox browser, when refreshed it was not able to clear user input on textbox successfully.
+
 Credits
 Content
 
@@ -58,12 +83,12 @@ Media
 
 Acknowledgements
 
-    I received inspiration for this project from X
+    I received inspiration for this project design layout from https://www.pokemon.com/us/pokedex/
     
-    https://www.youtube.com/watch?v=xuA83OYTE7I&t=320s
+    I received inspiration of building this project PokeDex from: 
+    https://www.youtube.com/watch?v=L0pPRauLP2E&t=s&ab_channel=JamesQQuick and https://www.youtube.com/watch?v=T-VQUKeSU1w&ab_channel=JamesQQuick
 
-    https://www.youtube.com/watch?v=L0pPRauLP2E&t=s&ab_channel=JamesQQuick
-
-    https://www.youtube.com/watch?v=T-VQUKeSU1w&ab_channel=JamesQQuick
-
+    I received inspiration of building this project search request from:
     https://www.youtube.com/watch?v=wxz5vJ1BWrc
+
+    https://www.youtube.com/watch?v=xuA83OYTE7I&t=320s
