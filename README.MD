@@ -7,8 +7,7 @@ Design Process
 
 Provide us insights about your design process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
 
-This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. These files should themselves either be included as a pdf file in the project itself (in an separate directory) Include the Adobe XD wireframe as a folder. You can include the XD share url.
-Features
+for the design protype can be reference from Protyping of design layout.xd  
 
 In this section, you should go over the different parts of your project, and describe each in a sentence or so.
 Existing Features
@@ -30,10 +29,17 @@ Features Left to Implement
 Technologies Used
     JQuery
         The project uses JQuery to simplify DOM manipulation.
+        reference link: https://jquery.com/
     Bootstrap 
-        The project uses Bootstrap to simplify default template for html.
+        The project uses Bootstrap version 5.0.0 and 3.4 to simplify default template for html.
+        reference link for v5.0  : https://getbootstrap.com/ 
+        reference link for v3.4.1: https://getbootstrap.com/docs/3.4/
     PokeAPI
-        The project uses PokeAPI to retrieve the data and simplify DOM mainpulation
+        The project uses PokeAPI to retrieve the data and simplify DOM mainpulation.
+        reference link: https://pokeapi.co/pokemon/
+    RestDB
+        The project uses RestDB to send the user data to store in the database.
+        reference link: https://restdb.io/
 
 Testing
     Contact form:
@@ -73,22 +79,20 @@ There is a second bug where users refreshed the page on the contactpage, when ru
 textbox successfully. While using firefox browser, when refreshed it was not able to clear user input on textbox successfully.
 
 Credits
-Content
+    Content
+        The texts used in this site were obtained from https://pokeapi.co/api/v2/pokemon/1 to https://pokeapi.co/api/v2/pokemon/898 in a JSON Format.
 
-    The text for section Y was copied from the Wikipedia article Z
+    Media
+        The photos used in this site were obtained from https://pokeapi.co/api/v2/pokemon/1 to https://pokeapi.co/api/v2/pokemon/898 in a JSON Format.
 
-Media
+    Acknowledgements
 
-    The photos used in this site were obtained from ...
-
-Acknowledgements
-
-    I received inspiration for this project design layout from https://www.pokemon.com/us/pokedex/
+        I received inspiration for this project design layout from https://www.pokemon.com/us/pokedex/
     
-    I received inspiration of building this project PokeDex from: 
-    https://www.youtube.com/watch?v=L0pPRauLP2E&t=s&ab_channel=JamesQQuick and https://www.youtube.com/watch?v=T-VQUKeSU1w&ab_channel=JamesQQuick
+        I received inspiration of building this project PokeDex from: 
+        https://www.youtube.com/watch?v=L0pPRauLP2E&t=s&ab_channel=JamesQQuick and https://www.youtube.com/watch?v=T-VQUKeSU1w&ab_channel=JamesQQuick
 
-    I received inspiration of building this project search request from:
-    https://www.youtube.com/watch?v=wxz5vJ1BWrc
+        I received inspiration of building this project search request from:
+        https://www.youtube.com/watch?v=wxz5vJ1BWrc
 
-    https://www.youtube.com/watch?v=xuA83OYTE7I&t=320s
+        https://www.youtube.com/watch?v=xuA83OYTE7I&t=320s
