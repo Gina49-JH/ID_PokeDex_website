@@ -76,13 +76,13 @@ Existing Features
 
 6. Credits
     6.1 Content
-    The texts used in this site were obtained from https://pokeapi.co/api/v2/pokemon/1 to https://pokeapi.co/api/v2/pokemon/898 in a JSON Format.
+    The texts used in this site were obtained from [PokeDex](https://pokeapi.co/api/v2/pokemon/1) to [PokeDex](https://pokeapi.co/api/v2/pokemon/898) in a JSON Format.
 
     6.2 Media
-    The photos used in this site were obtained from https://pokeapi.co/api/v2/pokemon/1 to https://pokeapi.co/api/v2/pokemon/898 in a JSON Format.
+    The photos used in this site were obtained from [PokeDex](https://pokeapi.co/api/v2/pokemon/1) to [PokeDex](https://pokeapi.co/api/v2/pokemon/898) in a JSON Format.
 
     6.3 Acknowledgements
-    I received inspiration for this project design layout from https://www.pokemon.com/us/pokedex/
+    I received inspiration for this project design layout from [PokeDex](https://www.pokemon.com/us/pokedex/)
     I received inspiration of building this project PokeDex from: 
     [YouTube](https://www.youtube.com/watch?v=L0pPRauLP2E&t=s&ab_channel=JamesQQuick) 
     [YouTube](https://www.youtube.com/watch?v=T-VQUKeSU1w&ab_channel=JamesQQuick)
