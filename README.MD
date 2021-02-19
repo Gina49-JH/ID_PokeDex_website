@@ -9,7 +9,6 @@ Provide us insights about your design process, focusing on who this website is f
 
 for the design protype can be reference from Protyping of design layout.xd  
 
-In this section, you should go over the different parts of your project, and describe each in a sentence or so.
 Existing Features
 
     Feature 1 - allows users to type a text or an number to search for the pokemon index.
@@ -19,7 +18,6 @@ Existing Features
     Feature 5 - allows users to enter the input of the contact details and send the data to restdb database.
     Feature 6 - allows users to clear the user input when reloading the page.
 
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
 Features Left to Implement
 
     First feature idea  - allows users to click on a random number which will generate a random number of pokemon in an array.
@@ -55,9 +53,10 @@ Testing
         Try to click on any random pokemon name in the card which will display an popup with the pokemon data in the same window.
         Try to click close which close the popup contain pokemon data and only display array of pokemon name and number.
 
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
-the project looks and how it works was when users use eg computer...etc to access the page, the css will check for the screen sizes 
-of the devices used to access the page. If the device eg computer screen of height 1366px and width 768px, css will check the width if width is more than 740px, then it will only use the code from 1 to 216 in mainstyle.css to display the website layout for web version. If the device eg mobile screen of height 360px and width 740px, css will check the width if width is less than 740px, then it will only use the media query code from line 218 to line 305 in a mainstyle.css to display the website layout meant for mobile version. How it looks for the mobile version that width is scaled to max of 740px.
+The project looks and how it works was when users use eg computer...etc to access the page, the css will check for the screen sizes 
+of the devices used to access the page. If the device eg computer screen of height 1366px and width 768px, css will check the width if width is more than 740px, then it will only use the code from 1 to 216 in mainstyle.css to display the website layout for web version. If the device eg mobile screen of height 360px and width 740px, css will check the width if width is less than 740px, then it will only use the media query code from line 218 to line 305 in a mainstyle.css to display the website layout meant for mobile version. How it looks 
+
+for the mobile version that width is scaled to max of 740px.
 First  - navbar has be reduced to text with background color of black box contains 3 white bar inside a button
 Second - box contains title with text color of grey and background color of white below the navbar
 Third  - box contains Name or number with text color of white, textbox contain message and background colour of blue below title
