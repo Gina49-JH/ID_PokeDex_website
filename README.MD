@@ -85,11 +85,11 @@ Credits
 
         I received inspiration for this project design layout from https://www.pokemon.com/us/pokedex/
         I received inspiration of building this project PokeDex from: 
-        [YouTube](https://www.youtube.com/watch?v=L0pPRauLP2E&t=s&ab_channel=JamesQQuick) 
-        [YouTube](https://www.youtube.com/watch?v=T-VQUKeSU1w&ab_channel=JamesQQuick)
+        [YouTube] (https://www.youtube.com/watch?v=L0pPRauLP2E&t=s&ab_channel=JamesQQuick) 
+        [YouTube] (https://www.youtube.com/watch?v=T-VQUKeSU1w&ab_channel=JamesQQuick)
 
         I received inspiration of building this project search request from:
-        [YouTube](https://www.youtube.com/watch?v=wxz5vJ1BWrc)
+        [YouTube] (https://www.youtube.com/watch?v=wxz5vJ1BWrc)
 
         I received inspiration of ...
-        [YouTube](https://www.youtube.com/watch?v=xuA83OYTE7I&t=320s)
+        [YouTube] (https://www.youtube.com/watch?v=xuA83OYTE7I&t=320s)
