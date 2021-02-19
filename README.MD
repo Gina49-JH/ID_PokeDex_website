@@ -1,8 +1,6 @@
-PokeDex
-https://gina49-jh.github.io/ID_PokeDex_website/
+PokeDex https://gina49-jh.github.io/ID_PokeDex_website/
 
-Building a Pokedex for users to search for the specific pokemon name or number which contains information of data to allow
-users to search and find more about specific pokemon. 
+Building a Pokedex for users to search for the specific pokemon name or number which contains information of data to allow users to search and find more about specific pokemon.
 
 Design Process
 
@@ -10,22 +8,24 @@ We created a template to follow on AdobeXD after getting the foundations down on
 
 for the design protype can be reference from Protyping of design layout.xd  
 
+
 Existing Features
-    Feature 1 - allows users to type a text or an number to search for the pokemon index.
-    Feature 2 - allows users to click on a specific pokemon and display an popup contain the data.
-    Feature 3 - allows users to see an loading bar animation before redirect to a new page.
-    Feature 4 - allows users to see the loading animation while scrolling down the page to find a specific pokemon and hide when completed.
-    Feature 5 - allows users to enter the input of the contact details and send the data to restdb database.
-    Feature 6 - allows users to clear the user input when reloading the page.
+1. Existing Features
+    1.1 - allows users to type a text or an number to search for the pokemon index.
+    1.2 - allows users to click on a specific pokemon and display an popup contain the data.
+    1.3 - allows users to see an loading bar animation before redirect to a new page.
+    1.4 - allows users to see the loading animation while scrolling down the page to find a specific pokemon and hide when completed.
+    1.5 - allows users to enter the input of the contact details and send the data to restdb database.
+    1.6 - allows users to clear the user input when reloading the page.
 
-Features Left to Implement
-    First feature idea  - allows users to click on a random number which will generate a random number of pokemon in an array.
-    Second feature idea - allows users to see the charts of the pokemon stat when click on the card.
-    Third feature idea  - allows users to see the description of the pokemon when click on the card.
-    fourth feature idea - allows users to click on the pokemon types and will generate a pokemon data matches with the types.
+2. Features Left to Implement
+    1. Allows users to click on a random number which will generate a random number of pokemon in an array.
+    2. Allows users to see the charts of the pokemon stat when click on the card.
+    3. Allows users to see the description of the pokemon when click on the card.
+    4. Allows users to click on the pokemon types and will generate a pokemon data matches with the types.
 
-Technologies Used
-    1. JQuery
+3. Technologies Used
+    3.1 JQuery
         The project uses JQuery to simplify DOM manipulation.
         reference link: [JQuery](https://jquery.com/)
     2. Bootstrap 
