@@ -12,8 +12,8 @@ body{
     border-radius: 2px;
 }
 
-.nav-bar{
-    background-color: blue;
+.myNavbar{
+    background-color: lightblue;
     color:black;
     font-size:auto;
     border: none;
@@ -25,7 +25,7 @@ body{
 }  
 
 .navbar{
-   background-color: blue;
+   background-color: lightblue;
    color:black;
    font-size:auto;
    border: none;
