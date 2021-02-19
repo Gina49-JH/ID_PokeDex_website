@@ -17,6 +17,12 @@ body{
     text-align: center;
 }  
 
+.navbar{
+   background-color: lightgrey;
+   color:black;
+   font-size:auto;
+   border: none;
+}
 
 .card{
     list-style: none;
@@ -214,7 +220,7 @@ button:hover {
 .h1{
     font-size: 50px;
 }
-
+/* If screen size is more than equals to 740px, it runs the code. */
 @media only screen and (max-width: 740px) {
     body {
       background-color: lightblue;
@@ -239,8 +245,14 @@ button:hover {
         margin-bottom: 25px;
     }
 
+    .container .container-title h1{
+        background-color: lightblue;
+        text-align: left;
+        color: black;
+    }
+
     .container-upper{
-        background-color: blue;
+        background-color:lightgrey;
     }
 
     .popup .card p{
@@ -302,4 +314,33 @@ button:hover {
      .card-title{
        margin-left:-16px;
     }
+}
+
+/* If screen size is more than 742px wide and less than equal to 991px, it runs the code */
+@media screen and (min-width: 742px) and (max-width:991px){
+    body{
+        background-color: lightblue;
+    }
+    .container label{
+       margin-left: -57%;
+       font-size:32px;
+       color:white;
+    }
+    .explaininfo{
+        margin-top: -18%;
+        color:white;
+        margin-left: 55%;
+    }
+    .container .container-upper .explaininfo h1{
+        font-size: auto;
+        text-align: justify;
+        margin-left: -5%;
+        background-color: lightgrey;
+    }
+
+    .container .container-title h1{
+        background-color: lightblue;
+        text-align: left;
+    }
+   
 }
