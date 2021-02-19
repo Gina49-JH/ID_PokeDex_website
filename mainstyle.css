@@ -12,13 +12,20 @@ body{
     border-radius: 2px;
 }
 
+.nav-bar{
+    background-color: blue;
+    color:black;
+    font-size:auto;
+    border: none;
+}
+
 .contact{
     width: 50%;
     text-align: center;
 }  
 
 .navbar{
-   background-color: lightgrey;
+   background-color: blue;
    color:black;
    font-size:auto;
    border: none;

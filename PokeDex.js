@@ -63,7 +63,7 @@ const fetchPokemonData = async() => {
     // display an error message if the data cannot be found.
     catch(err){
         console.log(err);
-    };
+    }
 };
 // create a variable to retrieve the data from pokemon and display output of pokemon.
 const displayPokemonData = (pokemon) => {
@@ -78,13 +78,14 @@ const displayPokemonData = (pokemon) => {
         <img class = "card-image" src="${pokeman.image}" />
         <h2 class ="card-title">#${pokeman.id}<br>${pokeman.name}</h2>
         </li>
-        `
+        `;
         })
 
     // add the data of pokemonHTMLString into the DOM of pokedex to display the html.
     .join('');
     pokedex.innerHTML = pokemonHTMLString;
-}
+};
+
 // create a variable to made a fetch request to the api with an id.
 const selectPokemon = async(id) => {
     // if pokeStore[id] does not exist in cache
@@ -152,7 +153,7 @@ const displayPopup = (pokeman) => {
             </table>
         </div>
     </div>
-    `
+    `;
     // add the data into the DOM of pokedex to display the html.
     pokedex.innerHTML = htmlstring + pokedex.innerHTML;
     // display the output of the pokemandata in popup method for debugging in console.
@@ -164,6 +165,6 @@ const closePopup = () => {
     const popup = document.querySelector('.popup');
     // use popup variable to look for the parent and remove child that was selected.
     popup.parentElement.removeChild(popup);
-} 
+} ;
 // call an method to display fetchPokemonData
 fetchPokemonData();

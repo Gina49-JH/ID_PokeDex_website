@@ -6,7 +6,7 @@ users to search and find more about specific pokemon.
 
 Design Process
 
-Provide us insights about your design process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
+We created a template to follow on AdobeXD after getting the foundations down on HTML. We collaborated frequently with the live share feature on Visual Studio Code in order to make sure no conflicts in code happen at any time.
 
 for the design protype can be reference from Protyping of design layout.xd  
 
@@ -27,17 +27,20 @@ Features Left to Implement
 Technologies Used
     1. JQuery
         The project uses JQuery to simplify DOM manipulation.
-        reference link: https://jquery.com/
+        reference link: [JQuery](https://jquery.com/)
     2. Bootstrap 
         The project uses Bootstrap version 5.0.0 and 3.4 to simplify default template for html.
-        reference link for v5.0  : https://getbootstrap.com/ 
-        reference link for v3.4.1: https://getbootstrap.com/docs/3.4/
+        reference link for v5.0  : [Bootstrap5] (https://getbootstrap.com/)
+        reference link for v3.4.1: [Bootstrap3.4.1](https://getbootstrap.com/docs/3.4/)
     3. PokeAPI
         The project uses PokeAPI to retrieve the data and simplify DOM mainpulation.
-        reference link: https://pokeapi.co/pokemon/
+        reference link: [PokeAPI] (https://pokeapi.co/pokemon/)
     4. RestDB
         The project uses RestDB to send the user data to store in the database.
-        reference link: https://restdb.io/
+        reference link: [Restdb] (https://restdb.io/)
+    5. Lottie
+        The project uses Lottie as a loading spinner as the page loads.
+        reference link: [Lottie] (https://unpkg.com/@lottiefiles/lottie-player@0.5.1/dist/lottie-player.js)
 
 Testing
     1. Contact form:
@@ -56,34 +59,37 @@ Testing
 The project looks and how it works was when users use eg computer...etc to access the page, the css will check for the screen sizes 
 of the devices used to access the page. If the device eg computer screen of height 1366px and width 768px, css will check the width if width is more than 740px, then it will only use the code from 1 to 216 in mainstyle.css to display the website layout for web version. If the device eg mobile screen of height 360px and width 740px, css will check the width if width is less than 740px, then it will only use the media query code from line 218 to line 305 in a mainstyle.css to display the website layout meant for mobile version. How it looks 
 
-for the mobile version that width is scaled to max of 740px.
+For the mobile version that width is scaled to max of 740px.
 1. navbar has be reduced to text with background color of black box contains 3 white bar inside a button
 2. box contains title with text color of grey and background color of white below the navbar
 3. box contains Name or number with text color of white, textbox contain message and background colour of blue below title
 4. box contains text of how to use the site text colour of white and background colour of grey below Name or number
 5. card contain the pokemon number , name and picture of each pokemon and background colour of white.
 
-for the web version:
+For the web version:
 1. navbar which contain the title, home and contactpage button background colour of black and text colour is white.
 2. box contains title with text color of grey and background color of white below the navbar
 3. box contains Name or number, textbox contain message, text of how to use the site, background colour and text is white below title.
 4. card contain the pokemon number , name and picture of each pokemon and background colour of white which each row contain 3 cards.
 
-bugs or known issues that was not addressed:
+Bugs or known issues that was not addressed:
 1. There is a first bug where users type the correct values and press submit button, the page is freeze and did not display an alert for sent successfully to the speific email a.k.a restdb database however when we check on the database we found a new records of the user input on the contactpage this issue have not addresssed yet.
 
 2. There is a second bug where users refreshed the page on the contactpage, when run on google chrome it was able to clear user input on textbox successfully. While using firefox browser, when refreshed it was not able to clear user input on textbox successfully.
 
 Credits
     Content
-        The texts used in this site were obtained from https://pokeapi.co/api/v2/pokemon/1 to https://pokeapi.co/api/v2/pokemon/898 in a JSON Format.
+        The texts used in this site were obtained from [PokeDex](https://pokeapi.co/api/v2/pokemon/1) to [PokeDex](https://pokeapi.co/api/v2/pokemon/898) in a JSON Format.
+        
+        The README.MD template used in this site were obtained from [GitHub](https://gina49-jh.github.io/ID_PokeDex_website/)
 
     Media
-        The photos used in this site were obtained from https://pokeapi.co/api/v2/pokemon/1 to https://pokeapi.co/api/v2/pokemon/898 in a JSON Format.
+        The photos used in this site were obtained from [PokeDex](https://pokeapi.co/api/v2/pokemon/1) to [PokeDex](https://pokeapi.co/api/v2/pokemon/898) in a JSON Format.
 
     Acknowledgements
 
-        I received inspiration for this project design layout from https://www.pokemon.com/us/pokedex/
+        I received inspiration for this project design layout from [PokeDex](https://www.pokemon.com/us/pokedex/)
+        
         I received inspiration of building this project PokeDex from: 
         [YouTube] (https://www.youtube.com/watch?v=L0pPRauLP2E&t=s&ab_channel=JamesQQuick) 
         [YouTube] (https://www.youtube.com/watch?v=T-VQUKeSU1w&ab_channel=JamesQQuick)
@@ -91,5 +97,5 @@ Credits
         I received inspiration of building this project search request from:
         [YouTube] (https://www.youtube.com/watch?v=wxz5vJ1BWrc)
 
-        I received inspiration of ...
+        I received inspiration of the progress bar to work from:
         [YouTube] (https://www.youtube.com/watch?v=xuA83OYTE7I&t=320s)
