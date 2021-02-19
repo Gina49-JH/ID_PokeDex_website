@@ -65,7 +65,7 @@ const fetchPokemonData = async() => {
         console.log(err);
     };
 };
-// create a var
+// create a variable to retrieve the data from pokemon and display output of pokemon.
 const displayPokemonData = (pokemon) => {
     // display the output of the pokemon in displayPokemonData method for debugging in console.
     console.log(pokemon);
