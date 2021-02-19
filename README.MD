@@ -10,7 +10,6 @@ Provide us insights about your design process, focusing on who this website is f
 for the design protype can be reference from Protyping of design layout.xd  
 
 Existing Features
-
     Feature 1 - allows users to type a text or an number to search for the pokemon index.
     Feature 2 - allows users to click on a specific pokemon and display an popup contain the data.
     Feature 3 - allows users to see an loading bar animation before redirect to a new page.
@@ -19,10 +18,10 @@ Existing Features
     Feature 6 - allows users to clear the user input when reloading the page.
 
 Features Left to Implement
-
     First feature idea  - allows users to click on a random number which will generate a random number of pokemon in an array.
     Second feature idea - allows users to see the charts of the pokemon stat when click on the card.
     Third feature idea  - allows users to see the description of the pokemon when click on the card.
+    fourth feature idea - allows users to click on the pokemon types and will generate a pokemon data matches with the types.
 
 Technologies Used
     JQuery
@@ -42,7 +41,7 @@ Technologies Used
 Testing
     Contact form:
         Go to the "Contact Us" page
-        Try to submit the empty form and verify that an error message about the required fields appears
+        Try to click on the first textbox and without user input and click on second textbox verify a red border color appears on the screen for empty or invalid input.
         Try to submit the form with an invalid email address and verify that a relevant error message appears
         Try to submit the form with all inputs valid and verify that a success message appears.
     
