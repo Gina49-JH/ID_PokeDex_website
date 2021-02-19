@@ -101,7 +101,7 @@ const selectPokemon = async(id) => {
     // display the output of the pokeStore for debugging in console.
     console.log(pokeStore);
     }
-    // if the pokeStore[id] does exist in cache, it will pokeStore directly inside cache.
+    // if the pokeStore[id] does exist in cache, it will pokeStore directly inside cache that was created.
     displayPopup(pokeStore[id]);
 };
 // create a variable to retrieve the pokemon data and display in html.
