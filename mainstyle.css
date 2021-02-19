@@ -12,10 +12,9 @@ body{
     border-radius: 2px;
 }
 
-.navbar{
-    background-color: lightgrey;
+.myNavbar{
+    background-color: lightblue;
     color:black;
-    font-size:auto;
     border: none;
 }
 
@@ -27,7 +26,6 @@ body{
 .nav-bar{
    background-color: lightblue;
    color:black;
-   font-size:auto;
    border: none;
 }
 

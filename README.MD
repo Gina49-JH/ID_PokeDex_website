@@ -73,9 +73,11 @@ For the web version:
 4. card contain the pokemon number , name and picture of each pokemon and background colour of white which each row contain 3 cards.
 
 Bugs or known issues that was not addressed:
-1. There is a first bug where users type the correct values and press submit button, the page is freeze and did not display an alert for sent successfully to the speific email a.k.a restdb database however when we check on the database we found a new records of the user input on the contactpage this issue have not addresssed yet.
+1. There is a first bug where users type the correct values and press submit button, the page is freeze and did not display an alert for sent successfully to the restdb database however when we check on the database we found a new records of the user input on the contactpage this issue have not addresssed yet.
 
-2. There is a second bug where users refreshed the page on the contactpage, when run on google chrome it was able to clear user input on textbox successfully. While using firefox browser, when refreshed it was not able to clear user input on textbox successfully.
+2. You can send an empty contact form, as there is no data validation, which also causes the slide to freeze.
+
+3. There is a second bug where users refreshed the page on the contactpage, when run on google chrome it was able to clear user input on textbox successfully. While using firefox browser, when refreshed it was not able to clear user input on textbox successfully.
 
 Credits
     Content
